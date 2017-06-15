@@ -6,6 +6,17 @@ body, html {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+  background: linear-gradient(270deg, #ddae37, #6c5c31);
+  background-size: 400% 400%;
+  animation: backgroundAnimation 30s ease infinite;
+}
+
+textarea,
+input {
+  border-radius: 4px;
+  padding: 4px;
+  border:0;
+  resize: none;
 }
 
 .keys {
@@ -57,6 +68,7 @@ kbd {
 
 .rule-area textarea{
   height: 150px;
+  padding: 10px;
 }
 
 .fields {
@@ -72,6 +84,18 @@ kbd {
 }
 
 .field span {
+  color: #fff;
   margin-bottom: 4px;
   font-size: 14px;
+}
+
+a {
+  color: #fff;
+}
+
+
+@keyframes backgroundAnimation {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
 }

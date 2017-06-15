@@ -71,9 +71,6 @@ Po.prototype.play = function() {
 
   interval = setInterval(() => {
     fractalSize--;
-    duration -= 10;
-    console.log(duration);
-
     if (fractalSize !== 0) {
       playSound(fractal[fractalSize - 1]);
     }
